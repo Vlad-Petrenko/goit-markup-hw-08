@@ -1,0 +1,41 @@
+.footer {
+  background-color: $background-black;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  @extend %container;
+}
+
+.address {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address__street {
+  margin: 0;
+  margin-top: 20px;
+  color: $white-color;
+  font-style: normal;
+}
+
+.address__link {
+  margin-top: 9px;
+  display: flex;
+  color: $white-fill;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $white-color;
+  margin: 0 0 20px 0;
+  padding: 0px;
+}

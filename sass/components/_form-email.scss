@@ -1,0 +1,46 @@
+.form-email {
+  margin-left: 93px;
+  margin-top: 9px;
+
+  &__group {
+    display: flex;
+  }
+  &__icon {
+    margin-left: 10px;
+  }
+}
+
+.form-email__input {
+  height: 50px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 0 0 0 16px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $white-fill;
+}
+
+.form-email__btn {
+  display: flex;
+
+  align-items: center;
+  text-align: center;
+  padding: 10px 28px 10px 29px;
+  margin-left: 12px;
+  background: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+}

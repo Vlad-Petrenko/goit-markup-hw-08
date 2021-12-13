@@ -1,0 +1,38 @@
+.clients {
+  @extend %section;
+
+  &__icon {
+    fill: currentColor;
+  }
+}
+
+.clients__list {
+  display: flex;
+  @extend %list;
+}
+
+.clients__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.clients__link {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $icon-gray-color;
+  border: solid 1px $icon-gray-color;
+  border-radius: 4px;
+
+  transition: color 250ms $standart-cubic, border-color 250ms $standart-cubic;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    border: solid 1px $accent-color;
+  }
+}
