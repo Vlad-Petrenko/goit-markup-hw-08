@@ -2,12 +2,24 @@
   background-color: $background-black;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
 }
 
 .footer__content {
-  display: flex;
-  justify-content: space-between;
   @extend %container;
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media (min-width: 1200px) {
+    justify-content: start;
+  }
+}
+
+.logo__group {
+  @media (min-width: 768px) {
+  }
 }
 
 .address {
@@ -24,10 +36,24 @@
 
 .address__link {
   margin-top: 9px;
-  display: flex;
+  display: block;
+  // display: flex;
   color: $white-fill;
   text-decoration: none;
   font-style: normal;
+}
+
+.footer__social {
+  // margin-left: 70px;
+  margin-top: 60px;
+  @media (min-width: 768px) {
+    margin-top: 5px;
+    margin-left: 165px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 5px;
+    margin-left: 70px;
+  }
 }
 
 .footer-title {
@@ -38,4 +64,7 @@
   color: $white-color;
   margin: 0 0 20px 0;
   padding: 0px;
+  @media (min-width: 1200px) {
+    text-align: start;
+  }
 }

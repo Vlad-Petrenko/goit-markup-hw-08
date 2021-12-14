@@ -1,10 +1,12 @@
-
 %container {
-  width: 1200px;
+  // width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 %list {
@@ -14,17 +16,12 @@
 }
 
 %section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-%section-title {
-  margin: 0;
-  margin-bottom: 50px;
-  color: $title-text-color;
-  font-size: 36px;
-  line-height: 1.2;
-  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 %visually-hidden {

@@ -1,9 +1,19 @@
 .site-nav {
+  display: none;
   padding: 0;
+  margin-left: 88px;
+
+  @media (min-width: 768px) {
+    display: block;
+  }
+  @media (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav__list {
   @extend %list;
+
   display: flex;
 }
 
@@ -15,6 +25,7 @@
 }
 
 .site-nav__link {
+  display: block;
   color: $title-text-color;
   text-decoration: none;
   font-weight: 500;
@@ -34,17 +45,18 @@
 .site-nav__link--current {
   color: $accent-color;
   position: relative;
+  @media (min-width: 768px) {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 0px;
+      height: 4px;
+      width: 100%;
 
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0px;
-    height: 4px;
-    width: 100%;
-
-    background-color: $accent-color;
-    border-radius: 2px;
+      background-color: $accent-color;
+      border-radius: 2px;
+    }
   }
 }
