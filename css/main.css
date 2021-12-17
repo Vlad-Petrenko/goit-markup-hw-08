@@ -1266,8 +1266,10 @@ img {
   border-right: 1px solid #eeeeee;
 }
 
-.portfolio__title--size {
-  font-size: 17px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__title--size {
+    font-size: 17px;
+  }
 }
 
 .portfolio__card {
