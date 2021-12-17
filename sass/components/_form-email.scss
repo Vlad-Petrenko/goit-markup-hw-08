@@ -25,7 +25,7 @@
 
 .form-email__input {
   height: 50px;
-  width: calc(100vw - 2 * 15px);
+  width: calc(100% - 2 * 15px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -39,10 +39,10 @@
 
   // width: 358px;
   @media (min-width: 768px) {
-    max-width: 460px;
+    width: 460px;
   }
   @media (min-width: 1200px) {
-    max-width: 358px;
+    width: 358px;
   }
 }
 

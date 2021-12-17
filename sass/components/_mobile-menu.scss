@@ -35,7 +35,7 @@
   z-index: 999;
 
   transform: translateX(100%);
-  transition: $standart-cubic;
+  transition: transform 250ms $standart-cubic;
 }
 
 .menu__container.is-open {
