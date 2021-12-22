@@ -15,9 +15,6 @@
 .feature-list__item {
   margin: 30px 0;
 
-  // &:last-child {
-  //   margin-bottom: 0;
-  // }
   @media screen and (min-width: 768px) {
     margin: 15px;
     width: calc((100% / 2) - 15px * 2);
@@ -25,11 +22,6 @@
   @media screen and (min-width: 1200px) {
     width: calc(100% / 4 - 15px * 2);
   }
-  //   margin-right: 30px;
-
-  //   &:last-child {
-  //       margin-right: 0;
-  //   }
 }
 
 .feature-list__title {
@@ -39,6 +31,9 @@
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .feature-list__paragraph {
